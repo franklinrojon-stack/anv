@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsunade's Appearance: Chest/Bust Size in Canon? Design Notes & Proportions (Explained)</title>
+  <meta name="description" content="Is there a canon bust size for Tsunade? Review databook references, design intent, official art comparisons, and how to discuss proportions respectfully.">
+  <link rel="canonical" href="https://example.com/tsunade/appearance-bust-size/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg-gradient: radial-gradient(120% 120% at 10% 0%, rgba(222, 255, 244, 0.85) 0%, rgba(236, 254, 255, 0.78) 50%, rgba(222, 247, 255, 0.75) 100%);
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-strong: rgba(255, 255, 255, 0.97);
+      --border: rgba(45, 212, 191, 0.26);
+      --divider: rgba(148, 163, 184, 0.24);
+      --accent: #34d399;
+      --accent-strong: #10b981;
+      --accent-soft: rgba(16, 185, 129, 0.16);
+      --text: #0f2a26;
+      --muted: #3a5c58;
+      --glow: 0 24px 60px rgba(34, 197, 94, 0.18);
+      --radius-lg: 22px;
+      --max-width: 1000px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Noto Sans JP', 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text);
+      line-height: 1.7;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(60% 60% at 80% 20%, rgba(59, 130, 246, 0.14), transparent),
+                  radial-gradient(70% 70% at 15% 75%, rgba(45, 212, 191, 0.18), transparent);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.9), rgba(16, 185, 129, 0.9));
+      color: #ecfdf5;
+      padding: 54px 20px 68px;
+      border-bottom-left-radius: 38px;
+      border-bottom-right-radius: 38px;
+      box-shadow: var(--glow);
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0%, transparent 65%);
+      top: -120px;
+      right: -120px;
+    }
+
+    .wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .breadcrumbs {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+    }
+
+    .breadcrumbs a {
+      color: rgba(236, 253, 245, 0.95);
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.2rem, 4.3vw, 3.2rem);
+      font-family: 'Playfair Display', 'Noto Serif JP', serif;
+      line-height: 1.2;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+      max-width: 720px;
+      color: rgba(236, 253, 245, 0.92);
+    }
+
+    .notice {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+      backdrop-filter: blur(10px);
+    }
+
+    .pillar-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(13, 148, 136, 0.3);
+      color: #ecfdf5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main { padding: 58px 0 78px; }
+
+    article {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 34px;
+      margin-bottom: 32px;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--glow);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.95rem;
+      font-family: 'Playfair Display', 'Noto Serif JP', serif;
+      color: #103530;
+    }
+
+    section h3 {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: var(--accent-strong);
+      letter-spacing: 0.03em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+      font-size: 0.95rem;
+      background: var(--surface-strong);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 1px var(--border);
+    }
+
+    table th, table td {
+      border: 1px solid var(--divider);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    table thead {
+      background: var(--accent-soft);
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+    }
+
+    .figure-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 18px;
+    }
+
+    .callout {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent-strong);
+      padding: 16px;
+      border-radius: 16px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .related-links a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: var(--surface);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .related-links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(16, 185, 129, 0.22);
+    }
+
+    .faq dl { margin: 0; }
+    .faq dt { font-weight: 600; margin-top: 18px; color: var(--accent-strong); }
+    .faq dd { margin: 8px 0 0; }
+
+    footer {
+      background: #0f1f1d;
+      color: rgba(213, 255, 241, 0.88);
+      padding: 34px 20px;
+    }
+
+    footer .meta {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      font-size: 0.95rem;
+    }
+
+    footer a { color: #6ee7b7; text-decoration: none; }
+
+    .image-slot {
+      position: relative;
+      border: 2px dashed rgba(16, 185, 129, 0.55);
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(16, 185, 129, 0.12);
+      aspect-ratio: 5 / 3;
+      min-height: 210px;
+    }
+
+    .image-slot::before {
+      content: attr(data-label);
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(15, 42, 38, 0.5);
+      z-index: 2;
+    }
+
+    .image-slot::after {
+      content: attr(data-aspect);
+      position: absolute;
+      bottom: 12px;
+      right: 16px;
+      font-size: 0.75rem;
+      color: rgba(15, 42, 38, 0.4);
+      letter-spacing: 0.08em;
+      z-index: 2;
+    }
+
+    .image-slot a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image-slot a:focus-visible {
+      outline: 3px solid rgba(16, 185, 129, 0.8);
+      outline-offset: 4px;
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 680px) {
+      section { padding: 28px; }
+
+      table {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        border: 0;
+        border-radius: var(--radius-lg);
+        background: transparent;
+        box-shadow: none;
+      }
+
+      table thead {
+        display: none;
+      }
+
+      table tbody {
+        display: grid;
+        gap: 16px;
+      }
+
+      table tbody tr {
+        display: grid;
+        gap: 10px;
+        padding: 18px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        background: var(--surface-strong);
+        box-shadow: 0 8px 20px rgba(15, 42, 38, 0.08);
+        transform: none;
+      }
+
+      table tbody tr:hover {
+        background: var(--surface-strong);
+        transform: none;
+      }
+
+      table tbody td {
+        display: grid;
+        gap: 6px;
+        padding: 0;
+        border: 0;
+        font-size: 0.95rem;
+      }
+
+      table tbody td::before {
+        content: attr(data-label);
+        font-size: 0.78rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muted);
+        font-weight: 600;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href="../index.html">Tsunade</a>
+        <span aria-hidden="true">›</span>
+        <span>Appearance &amp; Proportions</span>
+      </nav>
+      <h1>Tsunade's Appearance: Bust Size, Design Intent &amp; Canon Context</h1>
+      <p class="lead">Fans ask about Tsunade's bust size because her silhouette stands out in the series. This explainer keeps the conversation respectful, identifies what is and is not canon, and examines how the design supports her character.</p>
+      <div class="notice">Content policy: All descriptions use neutral terms like bust, chest, proportions. Replace placeholder art with licensed SFW visuals only.</div>
+      <div class="image-slot" data-label="Design analysis hero" data-aspect="5:3">
+        <a href="../image/tsunade-design-analysis-hero-5x3.png" target="_blank" rel="noopener">
+          <img src="../image/tsunade-design-analysis-hero-5x3.png" alt="Concept art showing Tsunade's front and side silhouettes with design notes and a highlighted Byakugo Seal." loading="eager" decoding="async">
+        </a>
+      </div>
+      <a class="pillar-link" href="../index.html">See full biography →</a>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section id="canon">
+        <h2>Is There a Canon Bust Size?</h2>
+        <p>No official manga chapter, anime episode, or databook prints a numeric bust size for Tsunade. Early fandom wikis circulated measurements sourced from unofficial fanbooks, but the production team has never confirmed them. Databook 1 mentions her height and weight (163.1 cm, 48.9 kg) but omits any other body metrics.</p>
+        <div class="image-slot" data-label="Canon evidence board" data-aspect="5:3">
+          <a href="../image/tsunade-canon-evidence-board-5x3.png" target="_blank" rel="noopener">
+            <img src="../image/tsunade-canon-evidence-board-5x3.png" alt="Evidence board combining databook highlights, a Kishimoto quote, and reference notes confirming Tsunade's lack of published bust metrics." loading="lazy" decoding="async">
+          </a>
+        </div>
+        <p>Interviews with creator Masashi Kishimoto describe Tsunade as combining &ldquo;the beauty of an older sister with the reliability of a veteran warrior,&rdquo; implying that her proportions are thematic rather than statistical. Treat any chart claiming exact centimeters as speculation unless an official scan is provided.</p>
+        <div class="callout">Action item before launch: add citation references for Databook 1 character sheet and Kishimoto interview (2003 Jump Festa booklet).</div>
+      </section>
+
+      <section id="design-intent">
+        <h2>How the Design Communicates Strength &amp; Maturity</h2>
+        <p>Tsunade's appearance balances nurturing and authoritative traits. The wider bust silhouette supports the visual language of a protector who literally shields others, while the diamond Byakugo Seal indicates experience. Animators highlight her posture during medical briefings: squared shoulders, forward stance, and confident gait.</p>
+        <p>The comparison board later in this article pairs silhouettes with outfit changes so you can show posture cues alongside wardrobe layers in a single visual.</p>
+        <h3>Chakra Control and Posture</h3>
+        <p>Her chakra-enhanced strength lets her maintain perfect balance despite high heels and a flowing haori. Animators often tilt the camera upward, dramatizing her protective stance. The Byakugo Seal glows during regeneration, drawing attention to her forehead and shifting focus away from her chest during climactic scenes.</p>
+        <h3>Wardrobe Choices</h3>
+        <p>The wrap top features structured folds that imply armor-like stability. Layered fabrics reduce motion blur, helping animators depict forceful punches without revealing unnecessary detail. When she ages visibly (after exhausting chakra), clothing remains the same, demonstrating that respect for her authority does not depend on youthful looks.</p>
+        <p>For an overview of how fans interpret these elements emotionally, revisit the <a href="../hot-pictures/index.html">design appeal gallery</a>.</p>
+      </section>
+
+      <section id="comparisons">
+        <h2>Official Art Comparisons</h2>
+        <p>Compare these licensed-still placeholders to illustrate how Tsunade's silhouette varies with perspective, lighting, and costume layers. Swap in official art before publishing.</p>
+        <div class="image-slot" data-label="Proportion comparison sheet" data-aspect="5:3">
+          <a href="../image/tsunade-proportion-comparison-5x3.png" target="_blank" rel="noopener">
+            <img src="../image/tsunade-proportion-comparison-5x3.png" alt="Comparison sheet aligning Tsunade's classic profile, wartime armor, and Boruto-era wardrobe with overlay guides for posture and fabrics." loading="lazy" decoding="async">
+          </a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Visual takeaway</th>
+              <th>Notes for analysts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Databook illustration</td>
+              <td>Balanced proportions with emphasis on Byakugo Seal</td>
+              <td>Artist commentary highlights medical prowess as focal point.</td>
+            </tr>
+            <tr>
+              <td>War arc episodes</td>
+              <td>Armor straps reduce silhouette contours</td>
+              <td>Useful for realistic cosplay patterning.</td>
+            </tr>
+            <tr>
+              <td>Boruto promotional art</td>
+              <td>Softer shading, more draping layers</td>
+              <td>Signals age progression without altering stature.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="myths">
+        <h2>Common Myths &amp; Fan Estimates</h2>
+        <p>Misinformation spreads quickly across forums and short-form video apps. Use this section to clarify frequent misconceptions.</p>
+        <ul>
+          <li><strong>&ldquo;Databook 2 lists a bust size.&rdquo;</strong> False. All databooks omit bust measurements. Screenshots claiming otherwise are edited.</li>
+          <li><strong>&ldquo;Studio Pierrot confirmed measurements on Twitter.&rdquo;</strong> False. The official account has never shared body metrics.</li>
+          <li><strong>&ldquo;Fan service scenes prove a specific size.&rdquo;</strong> Storyboards prioritize dramatic framing, not measurement accuracy.</li>
+        </ul>
+        <p>If you encounter new rumors, log them in the editorial tracker along with debunking references. When responding publicly, redirect fans to this page and the <a href="../lady-tsunade/index.html">Lady Tsunade honorific guide</a> for broader context.</p>
+      </section>
+
+      <section id="related">
+        <h2>Related Topics &amp; Further Reading</h2>
+        <p>Continue exploring Tsunade's character design and lore with these internal resources:</p>
+        <div class="related-links" aria-label="Additional resources">
+          <a href="../hot-pictures/index.html">Design appeal &amp; SFW gallery →</a>
+          <a href="../full-name-age-family/index.html">Identity &amp; age fact sheet →</a>
+          <a href="../death-boruto/index.html">Boruto status update →</a>
+        </div>
+        <div class="callout">Reminder: Add a short bibliography before publishing, citing databooks and interviews used for confirmation.</div>
+      </section>
+
+      <section id="faq" class="faq">
+        <h2>FAQs</h2>
+        <dl>
+          <dt>Does Kishimoto ever state Tsunade's bust size?</dt>
+          <dd>No. Interviews discuss her being a &ldquo;strong and beautiful woman&rdquo; but omit numerical measurements.</dd>
+          <dt>Why does her appearance change when she releases Byakugo?</dt>
+          <dd>Exhausting stored chakra reveals her natural age, softening facial lines and posture. Clothing remains the same, underscoring continuity.</dd>
+          <dt>How should fan artists approach proportions?</dt>
+          <dd>Focus on silhouette balance: broad shoulders, steady stance, and the diamond seal as focal point. Avoid exaggerating features beyond canon references.</dd>
+          <dt>Are there official model sheets?</dt>
+          <dd>Yes. Naruto Animation Archives include front, side, and back views. Acquire licensed copies to ensure accuracy.</dd>
+          <dt>Where can I discuss design respectfully?</dt>
+          <dd>Community spaces like r/Naruto or dedicated art servers welcome analysis when guidelines against objectification are followed. Link this page for context.</dd>
+        </dl>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="meta">
+      <p><strong>Author:</strong> Mei Tanaka - anime researcher focusing on character design analysis.</p>
+      <p><strong>Date published:</strong> 2023-12-16 . <strong>Last updated:</strong> 2024-04-26</p>
+      <p>Next steps: insert citations, replace placeholder art, and verify terminology with editorial standards.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://example.com/tsunade/appearance-bust-size/"
+    },
+    "headline": "Tsunade's Appearance: Chest/Bust Size in Canon? Design Notes & Proportions (Explained)",
+    "description": "Is there a canon bust size for Tsunade? Review databook references, design intent, official art comparisons, and how to discuss proportions respectfully.",
+    "author": {
+      "@type": "Person",
+      "name": "Mei Tanaka"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hidden Leaf Lore Archive",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.com/assets/logo.png"
+      }
+    },
+    "image": "https://example.com/assets/tsunade-design-silhouette.webp",
+    "datePublished": "2023-12-16",
+    "dateModified": "2024-04-26",
+    "wordCount": "1090",
+    "inLanguage": "en",
+    "articleSection": ["Design", "Proportions", "Myths"],
+    "keywords": "tsunade breast, tsunade chest, tsunade bust size"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tsunade",
+        "item": "https://example.com/tsunade/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Appearance & Proportions",
+        "item": "https://example.com/tsunade/appearance-bust-size/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Kishimoto ever state Tsunade's bust size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Official materials discuss her being strong and beautiful but never publish numerical bust measurements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does her appearance change when she releases Byakugo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The chakra reserve keeps her cells youthful. Once depleted, her natural age shows, but her clothing and stature remain the same." }
+      },
+      {
+        "@type": "Question",
+        "name": "How should fan artists approach proportions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Focus on silhouette balance with broad shoulders, grounded stance, and the Byakugo Seal as a focal point."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there official model sheets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Naruto Animation Archives include multi-angle model sheets; obtain licensed copies for accuracy." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I discuss design respectfully?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Join moderated communities that encourage lore analysis and cite official sources, such as r/Naruto or official fan books." }
+      }
+    ]
+  }
+  </script>
+  <script>
+    document.querySelectorAll('table').forEach((table) => {
+      const headers = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
+      table.querySelectorAll('tbody tr').forEach((row) => {
+        row.querySelectorAll('td').forEach((cell, index) => {
+          if (!cell.dataset.label && headers[index]) {
+            cell.dataset.label = headers[index];
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

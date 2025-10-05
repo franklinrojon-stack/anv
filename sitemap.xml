@@ -1,48 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://example.com/nezuko/chapter-1/</loc>
-    <lastmod>2024-05-01</lastmod>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://example.com/nezuko/chapter-2/</loc>
-    <lastmod>2024-05-01</lastmod>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://example.com/tsunade/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/index.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://example.com/tsunade/appearance-bust-size/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/tsunade/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://anvgame.com/tsunade/appearance-bust-size/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://example.com/tsunade/death-boruto/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/tsunade/death-boruto/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://example.com/tsunade/full-name-age-family/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/tsunade/full-name-age-family/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://example.com/tsunade/hot-pictures/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/tsunade/hot-pictures/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.72</priority>
   </url>
   <url>
-    <loc>https://example.com/tsunade/lady-tsunade/</loc>
-    <lastmod>2024-05-01</lastmod>
+    <loc>https://anvgame.com/tsunade/lady-tsunade/</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://anvgame.com/nezuko/chapter-1.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://anvgame.com/nezuko/chapter-2.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>

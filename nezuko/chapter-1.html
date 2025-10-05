@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nezuko Nightfall Chronicle – Chapter 1: Night Rain Relay Station</title>
+<meta content="Chapter 1 of the Nezuko Nightfall Chronicle brings Nezuko and Zenitsu into a rain-soaked relay station as the mystery behind the lost bell unfolds." name="description"/>
+<meta content="nezuko, nezuko comic, nezuko &amp; zenitsu, zenitsu, demon slayer fiction" name="keywords"/>
+<link href="https://example.com/nezuko/chapter-1/" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      color-scheme: dark;
+      --bg: #060608;
+      --bg-soft: #0d0f13;
+      --bg-gradient: radial-gradient(circle at 20% 20%, rgba(241, 98, 149, 0.16), transparent 55%),
+        radial-gradient(circle at 70% 0%, rgba(57, 128, 237, 0.18), transparent 55%),
+        linear-gradient(160deg, #05060a 0%, #10131d 55%, #05060a 100%);
+      --surface: rgba(22, 26, 36, 0.88);
+      --surface-strong: rgba(30, 36, 49, 0.9);
+      --accent: #f16295;
+      --accent-strong: #ff2f6c;
+      --accent-soft: rgba(241, 98, 149, 0.12);
+      --sky: #6fa3ff;
+      --text: #f5f6f8;
+      --muted: #98a2b3;
+      --divider: rgba(241, 98, 149, 0.2);
+      --glow: 0 20px 40px rgba(241, 98, 149, 0.25);
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --max-width: 1020px;
+      --font-base-size: clamp(1rem, 0.96rem + 0.35vw, 1.12rem);
+      --font-line-height: 1.75;
+      --paragraph-spacing: clamp(18px, 4vw, 26px);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg-gradient), var(--bg);
+      min-height: 100vh;
+      font-size: var(--font-base-size);
+      line-height: var(--font-line-height);
+      letter-spacing: 0.015em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    p {
+      margin: 0 0 var(--paragraph-spacing);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    header {
+      backdrop-filter: blur(18px);
+      background: rgba(8, 10, 16, 0.75);
+      border-bottom: 1px solid rgba(111, 163, 255, 0.18);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand span:first-child {
+      font-family: 'Unbounded', system-ui;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .brand span:last-child {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      border-color: rgba(111, 163, 255, 0.35);
+      background: rgba(111, 163, 255, 0.08);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: clamp(56px, 8vw, 80px) 28px clamp(88px, 12vw, 120px);
+      display: grid;
+      gap: clamp(36px, 6vw, 48px);
+    }
+
+    .hero {
+      display: grid;
+      gap: clamp(20px, 4vw, 28px);
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: clamp(32px, 6vw, 44px);
+      box-shadow: var(--glow);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(111, 163, 255, 0.1);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      right: -60px;
+      top: -40px;
+      background: radial-gradient(circle, rgba(255, 47, 108, 0.35) 0%, transparent 70%);
+      filter: blur(0.5px);
+    }
+
+    .hero-kicker {
+      font-family: 'Unbounded', system-ui;
+      font-size: 0.85rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: 'Unbounded', system-ui;
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
+      color: var(--muted);
+      line-height: 1.75;
+      letter-spacing: 0.01em;
+    }
+
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 32px;
+      font-size: clamp(0.9rem, 0.88rem + 0.2vw, 1rem);
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    .meta-grid span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-grid span::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(241, 98, 149, 0.12);
+    }
+
+    article {
+      display: grid;
+      gap: clamp(40px, 8vw, 56px);
+    }
+
+    .chapter-body {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: clamp(28px, 6vw, 40px);
+      border: 1px solid rgba(241, 98, 149, 0.12);
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.32);
+    }
+
+    .chapter-body p {
+      margin: 0 0 clamp(20px, 5vw, 28px);
+      font-size: clamp(1.02rem, 0.98rem + 0.25vw, 1.18rem);
+      color: #e5e7eb;
+      line-height: 1.78;
+      letter-spacing: 0.01em;
+    }
+
+    .chapter-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .image-slot {
+      border-radius: var(--radius-md);
+      border: 1px dashed rgba(241, 98, 149, 0.35);
+      padding: clamp(22px, 5vw, 28px);
+      display: grid;
+      gap: 14px;
+      margin: clamp(26px, 7vw, 40px) 0;
+      text-align: center;
+      background: rgba(10, 13, 20, 0.82);
+    }
+
+    .image-slot button {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: zoom-in;
+      border-radius: 18px;
+      overflow: hidden;
+      display: block;
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .image-slot figcaption {
+      margin: 0;
+      font-size: clamp(0.9rem, 0.88rem + 0.18vw, 1rem);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      padding: clamp(24px, 6vw, 48px);
+      background: rgba(5, 7, 12, 0.74);
+      backdrop-filter: blur(8px);
+      display: grid;
+      place-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      z-index: 50;
+    }
+
+    .lightbox.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox figure {
+      background: rgba(12, 16, 24, 0.92);
+      border-radius: 26px;
+      padding: clamp(18px, 4vw, 28px);
+      max-width: min(960px, 92vw);
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .lightbox img {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    .lightbox figcaption {
+      margin: 0;
+      font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+      color: #e5e9ff;
+      line-height: 1.6;
+    }
+
+    .close-lightbox {
+      justify-self: end;
+      border: none;
+      background: rgba(241, 98, 149, 0.24);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .close-lightbox:hover,
+    .close-lightbox:focus {
+      transform: translateY(-1px);
+      background: rgba(241, 98, 149, 0.4);
+    }
+
+    .chapter-nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: clamp(12px, 4vw, 32px);
+    }
+
+    .chapter-nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 12px 24px rgba(241, 98, 149, 0.28);
+      transition: transform 0.2s ease;
+    }
+
+    .chapter-nav a:hover,
+    .chapter-nav a:focus {
+      transform: translateY(-2px);
+      background: var(--accent-strong);
+    }
+
+    footer {
+      padding: 48px 28px 72px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .chapter-body {
+        padding: 24px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .chapter-body p {
+        font-size: 1.02rem;
+      }
+
+      .image-slot img {
+        max-height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="topbar">
+<div class="brand">
+<span>Radiant Archive</span>
+<span>Multiverse heroines &amp; chronicles</span>
+</div>
+<nav aria-label="Primary navigation">
+<a href="../index.html">Home Base</a>
+<a href="../tsunade/index.html">Tsunade Profile</a>
+<a href="chapter-2.html">Chapter 2</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero">
+<span class="hero-kicker">Nezuko Nightfall Chronicle</span>
+<h1>Chapter 1 · Night Rain Relay Station</h1>
+<p>An atmospheric opening that draws Nezuko &amp; Zenitsu into a storm-lit relay station, setting up the myths surrounding the lost bell.</p>
+<div class="meta-grid">
+<span>Focus: Nezuko</span>
+<span>Secondary: Zenitsu</span>
+<span>Series: Nezuko Comic Lore</span>
+<span>Reading Time: ~3 minutes</span>
+</div>
+</section>
+<article>
+<section aria-label="Chapter narrative" class="chapter-body">
+<p>Act One: Night Rain Relay Station · The Lost Bell. The rain fell like shattered blades, slapping against the eaves.</p>
+
+<p>The rain fell like shattered blades, slapping against the eaves.</p>
+<p>“Why does it have to be now, of all times, aaaaaah! It was right there just a moment ago!”</p>
+<p>Zenitsu was on the verge of tears. He yanked at his own hair with one hand while clutching the wooden box on his back with the other, pacing anxiously in front of the relay station like a sparrow with its feet scorched by fire.</p>
+
+<p>The night curtain was thick as ink, and there was no one around. Zenitsu suddenly realized he was standing alone in the heart of the darkness, his throat tightening, his toes gradually stiffening.</p><figure class="image-slot"><button class="image-trigger" data-alt="Nezuko standing beneath night rain outside the relay station" data-caption="Nezuko stands beneath the night rain at the relay station, setting the storm-lit tone for the opening chapter." data-image="../tsunade/image/nezuko/nezuko-night-rain-relay-hero.png" type="button"><img alt="Nezuko standing beneath night rain outside the relay station" src="../tsunade/image/nezuko/nezuko-night-rain-relay-hero.png"/></button><figcaption>Nezuko stands beneath the night rain at the relay station, setting the storm-lit tone for the opening chapter.</figcaption></figure>
+<p>『No one... What if a demon suddenly pops out...? No, no, no, that's impossible, right...?』</p>
+
+<p>The moment the fearful thought surfaced in his mind, he shook his head desperately, trying to dispel the lingering shadows in his thoughts.</p>
+<p>At that moment, a gust of wind blew through the alley entrance, and faintly, the sound of a bell carried through the air.</p>
+<p>Ding-ling—</p>
+
+<p>Zenitsu's eyes widened instantly: “The bell?! Nezuko r34's bell! It must have fallen off somewhere along the path we took!”</p><figure class="image-slot"><button class="image-trigger" data-alt="Illustrated bell glinting in the rain in a Nezuko comic frame" data-caption="A Nezuko comic-style frame spotlights the lost bell, the clue that anchors Chapter 1." data-image="../tsunade/image/nezuko/nezuko-comic-lost-bell.png" type="button"><img alt="Illustrated bell glinting in the rain in a Nezuko comic frame" src="../tsunade/image/nezuko/nezuko-comic-lost-bell.png"/></button><figcaption>A Nezuko comic-style frame spotlights the lost bell, the clue that anchors Chapter 1.</figcaption></figure>
+<p>In an instant, all his fear and anxiety transformed into an urgent desire to find the bell. Zenitsu took a deep breath, securing the wooden box more tightly on his back. After hesitating for a few seconds, he finally took that step forward with determination.</p>
+
+<p>『Scared? Of course I'm scared to death. But what I'm even more afraid of is—』</p>
+<p>He glanced back at the box on his back, as if he could see the sleeping girl's face through the wood.</p>
+<p>『If her bell is lost, she'll definitely be so sad... That kind of expression... I-I don't want to see it, aaaaaah!』</p><figure class="image-slot"><button class="image-trigger" data-alt="Zenitsu dashing through rain with Nezuko’s box on his back" data-caption="Zenitsu explodes into motion with Nezuko’s box, sprinting to recover the bell before dawn." data-image="../tsunade/image/nezuko/nezuko-zenitsu-rain-chase.png" type="button"><img alt="Zenitsu dashing through rain with Nezuko’s box on his back" src="../tsunade/image/nezuko/nezuko-zenitsu-rain-chase.png"/></button><figcaption>Zenitsu explodes into motion with Nezuko’s box, sprinting to recover the bell before dawn.</figcaption></figure>
+<p>With that thought, Zenitsu squeezed his eyes shut tightly, and his feet erupted with lightning-like speed, charging toward the direction where the bell's sound had faded into the alley.</p>
+<p>“Aaaaaaaaah—!”</p>
+<p>His voice tore through the silence of the rainy night as he ran wildly along the slick cobblestone path, his steps light and swift as if treading on bolts of lightning.</p>
+<p>—But the moment he dashed into the alley entrance, the scene before him abruptly shifted.</p>
+<p>The rain curtain froze like torn paper, and the surrounding streets, houses, even the sky, seemed sliced apart by mirrors, folding into bizarre, distorted shapes.</p><figure class="image-slot"><button class="image-trigger" data-alt="Zenitsu lit by mirror shards in the alley" data-caption="Mirror-lit shadows close around Zenitsu as the alley fractures into the first hints of Mirage Street." data-image="../tsunade/image/nezuko/zenitsu-night-panic-portrait.png" type="button"><img alt="Zenitsu lit by mirror shards in the alley" src="../tsunade/image/nezuko/zenitsu-night-panic-portrait.png"/></button><figcaption>Mirror-lit shadows close around Zenitsu as the alley fractures into the first hints of Mirage Street.</figcaption></figure>
+<p>Ding-ling, ding-ling—</p>
+<p>The bell rang again, but this time, the sound turned utterly eerie, echoing with a shrill, mocking laughter in the air.</p>
+
+<p>“If you can't find the bell... she'll hate you, won't she?”</p>
+<p>His reflection in the mirror suddenly grinned, its smile grotesque and icy cold.</p>
+<p>“You're afraid of being hated by her, aren't you? You're scared to death, aren't you? Hahaha...”</p><figure class="image-slot"><button class="image-trigger" data-alt="Nezuko illuminated by spectral bell light" data-caption="The spectral glow of Nezuko’s bell keeps pulsing through the storm, pulling Zenitsu deeper." data-image="../tsunade/image/nezuko/nezuko-bell-memory-glow.png" type="button"><img alt="Nezuko illuminated by spectral bell light" src="../tsunade/image/nezuko/nezuko-bell-memory-glow.png"/></button><figcaption>The spectral glow of Nezuko’s bell keeps pulsing through the storm, pulling Zenitsu deeper.</figcaption></figure>
+<p>Zenitsu shuddered violently, his legs going weak. He hugged the box tightly, backing away step by step:</p>
+<p>“What a joke... I-I'm not scared! It's just an illusion... I'm a Demon Slayer!”</p>
+<p>Before the words could fully leave his mouth, the reflections in the mirrors all bared mocking smiles in unison:</p>
+<p>“Hahahaha, liar.”</p>
+<p>Zenitsu's heart pounded wildly, his body trembling uncontrollably. Just as he was on the verge of total collapse, the wooden box on his back vibrated gently.</p><figure class="image-slot"><button class="image-trigger" data-alt="Sleeping Nezuko resting within her wooden box" data-caption="Sleeping Nezuko rests within her protective box, a reminder of the promise Zenitsu refuses to break." data-image="../tsunade/image/nezuko/nezuko-sleeping-guardian.png" type="button"><img alt="Sleeping Nezuko resting within her wooden box" src="../tsunade/image/nezuko/nezuko-sleeping-guardian.png"/></button><figcaption>Sleeping Nezuko rests within her protective box, a reminder of the promise Zenitsu refuses to break.</figcaption></figure>
+<p>The next second, a warm flame seeped slowly from the cracks in the box, forming a faint fiery pattern on the ground, pointing toward the depths of the mirror labyrinth.</p>
+<p>Inside the box, Nezuko r34 seemed to sense something, letting out a soft whimper.</p>
+
+<p>Zenitsu's racing heartbeat steadied in an instant.</p>
+<p>『That's right... I'm not alone.』</p><figure class="image-slot"><button class="image-trigger" data-alt="Zenitsu vowing to Nezuko beneath neon rain" data-caption="Zenitsu vows beneath neon rain to recover Nezuko’s bell, sealing the Night Rain Relay vow." data-image="../tsunade/image/nezuko/nezuko-zenitsu-rain-vow.png" type="button"><img alt="Zenitsu vowing to Nezuko beneath neon rain" src="../tsunade/image/nezuko/nezuko-zenitsu-rain-vow.png"/></button><figcaption>Zenitsu vows beneath neon rain to recover Nezuko’s bell, sealing the Night Rain Relay vow.</figcaption></figure>
+<p>He gripped the hilt of his sword tightly, lifting his gaze to the darkness deep within the mirrors. For the first time, his eyes burned with resolve.</p>
+<p>“Wait for me, Nezuko r34. I'll definitely find that bell.”</p>
+
+<p>But in that very moment, the illusion seemed to latch onto the soft spot in his heart, the mirrors beginning to warp and reflect another scene—a warm, secretive hallucination where Nezuko r34 was no longer the slumbering girl in the box, but instead crawling out slowly, draped in thin fabric soaked by the rain, her damp strands of hair making her pinkish skin glow softly in the dim light. Her eyes half-lidded with a hazy longing, she reached out and gently wrapped her arms around Zenitsu's neck.</p>
+<p>Zenitsu's body stiffened instantly, his breathing turning ragged. He knew this was an illusion, yet he couldn't resist the sensation transmitted from her fingertips—Nezuko r34's skin was as smooth as silk, carrying a slight chill that quickly melted into warm adhesion under his body heat. Her breath brushed against his ear, soft as a feather's caress, laced with a faint cherry blossom scent, making his throat bob and a wave of heat surge through his chest.</p>
+<p>『This... this isn't real... But why does it feel so vivid?』 Zenitsu's mind was a whirlwind, fear and desire intertwining. He felt her fingers trace lightly over the nape of his neck, that subtle friction sending electric jolts down his spine, making him tremble involuntarily. Her body pressed closer, her soft curves molding against his chest, each breath causing that warm undulation to sync with his own, as if inviting him to go further. Zenitsu's hands instinctively steadied her waist, his fingertips brushing the skin beneath the thin cloth—warm and supple, yielding elastically under his touch, sending his heart thundering like drums, his blood boiling within.</p><figure class="image-slot"><button class="image-trigger" data-alt="Nezuko and Zenitsu entwined within storm-lit illusion" data-caption="The illusion twists their bond into a storm-lit embrace, testing Zenitsu’s resolve before he breaks free." data-image="../tsunade/image/nezuko/nezuko-and-zenitsu-storm-embrace.png" type="button"><img alt="Nezuko and Zenitsu entwined within storm-lit illusion" src="../tsunade/image/nezuko/nezuko-and-zenitsu-storm-embrace.png"/></button><figcaption>The illusion twists their bond into a storm-lit embrace, testing Zenitsu’s resolve before he breaks free.</figcaption></figure>
+<p>Psychologically, he desperately told himself this was a trap, yet he couldn't help but indulge in this intimacy—he feared losing her, feared her disappointment, and this hallucination seemed to promise that surrender would grant him this tenderness forever. Her lips grazed his earlobe, the moist touch setting his entire body ablaze, his mind flashing with countless forbidden images: her whimpers no longer mere calls, but laced with breathy seduction, making him imagine stripping away that layer of fabric, feeling every secret inch of her body. His senses amplified—the rain's patter a distant murmur, the mirrors' laughter a low, coaxing whisper, urging him deeper into surrender.</p>
+<p>But just as he teetered on the edge of losing himself, Nezuko r34's whimper echoed again from the real box, soft yet firm, like a clear spring washing away his fog. The illusory her began to blur, and Zenitsu shook his head fiercely, shoving away the phantom embrace, his chest heaving, face flushed crimson.</p>
+<p>“Wait for me, Nezuko r34. I'll definitely find that bell.”</p>
+<p>With those words, Zenitsu's feet once more erupted in thunderous speed, charging toward the direction guided by the fiery pattern.</p>
+</section>
+</article>
+<section aria-label="Chapter navigation" class="chapter-nav">
+<a href="chapter-2.html">Dive into Chapter 2</a>
+</section>
+</main>
+<div aria-hidden="true" class="lightbox" data-lightbox="">
+<figure>
+<button class="close-lightbox" data-close="" type="button">Close</button>
+<img alt="" src=""/>
+<figcaption></figcaption>
+</figure>
+</div>
+<footer>
+    © 2024 Radiant Archive · Part of the multiverse heroines collection. For collaboration or licensing, connect via the main hub contact page.
+  </footer>
+<script>
+    (() => {
+      const lightbox = document.querySelector('[data-lightbox]');
+      if (!lightbox) return;
+      const lightboxImage = lightbox.querySelector('img');
+      const lightboxCaption = lightbox.querySelector('figcaption');
+      const closeButton = lightbox.querySelector('.close-lightbox');
+      const triggers = document.querySelectorAll('.image-trigger');
+      let lastTrigger = null;
+
+      const openLightbox = (src, alt, caption, trigger) => {
+        lightboxImage.src = src;
+        lightboxImage.alt = alt;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('is-visible');
+        lightbox.removeAttribute('aria-hidden');
+        lastTrigger = trigger;
+        closeButton.focus({ preventScroll: true });
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('is-visible');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImage.src = '';
+        lightboxImage.alt = '';
+        lightboxCaption.textContent = '';
+        if (lastTrigger) {
+          lastTrigger.focus();
+        }
+      };
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          openLightbox(
+            trigger.dataset.image,
+            trigger.dataset.alt || '',
+            trigger.dataset.caption || '',
+            trigger
+          );
+        });
+      });
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox || ('close' in event.target.dataset)) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('is-visible')) {
+          closeLightbox();
+        }
+      });
+    })();
+  </script>
+<script defer="" src="https://vercel.com/analytics/script.js"></script>
+<script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Nezuko Nightfall Chronicle – Chapter 1: Night Rain Relay Station",
+    "description": "Chapter 1 of the Nezuko Nightfall Chronicle introduces a rain-soaked relay station mystery centered on Nezuko and Zenitsu's bond.",
+    "author": {
+      "@type": "Person",
+      "name": "Radiant Archive Editorial"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Radiant Archive",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.com/assets/logo.png"
+      }
+    },
+    "datePublished": "2024-05-01",
+    "dateModified": "2024-05-01",
+    "wordCount": "350",
+    "inLanguage": "en",
+    "keywords": [
+      "nezuko",
+      "nezuko comic",
+      "nezuko & zenitsu",
+      "zenitsu",
+      "demon slayer fiction"
+    ],
+    "articleSection": "Chapter 1",
+    "mainEntityOfPage": "https://example.com/nezuko/chapter-1/"
+  }
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Radiant Archive",
+        "item": "https://example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nezuko Nightfall Chronicle",
+        "item": "https://example.com/nezuko/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Chapter 1",
+        "item": "https://example.com/nezuko/chapter-1/"
+      }
+    ]
+  }
+  </script>
+</body>
+</html>

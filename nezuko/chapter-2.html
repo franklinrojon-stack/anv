@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nezuko Nightfall Chronicle – Chapter 2: Mirror Street Manifestation</title>
+<meta content="Chapter 2 of the Nezuko Nightfall Chronicle leads Nezuko and Zenitsu into Mirror Street, where prismatic illusions challenge their resolve." name="description"/>
+<meta content="nezuko, nezuko comic, nezuko &amp; zenitsu, zenitsu, mirror street mirage" name="keywords"/>
+<link href="https://example.com/nezuko/chapter-2/" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      color-scheme: dark;
+      --bg: #05060a;
+      --bg-gradient: radial-gradient(circle at 15% 25%, rgba(111, 163, 255, 0.22), transparent 55%),
+        radial-gradient(circle at 78% 0%, rgba(241, 98, 149, 0.16), transparent 55%),
+        linear-gradient(160deg, #05060a 0%, #0a0d16 55%, #05060a 100%);
+      --surface: rgba(18, 22, 34, 0.9);
+      --accent: #6fa3ff;
+      --accent-strong: #3778ff;
+      --accent-soft: rgba(111, 163, 255, 0.18);
+      --text: #f5f6f8;
+      --muted: #9aa7c2;
+      --divider: rgba(111, 163, 255, 0.22);
+      --glow: 0 24px 48px rgba(111, 163, 255, 0.24);
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --max-width: 1020px;
+      --font-base-size: clamp(1rem, 0.96rem + 0.35vw, 1.12rem);
+      --font-line-height: 1.75;
+      --paragraph-spacing: clamp(18px, 4vw, 26px);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg-gradient), var(--bg);
+      min-height: 100vh;
+      font-size: var(--font-base-size);
+      line-height: var(--font-line-height);
+      letter-spacing: 0.015em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    p {
+      margin: 0 0 var(--paragraph-spacing);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    header {
+      backdrop-filter: blur(18px);
+      background: rgba(8, 10, 16, 0.78);
+      border-bottom: 1px solid rgba(111, 163, 255, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand span:first-child {
+      font-family: 'Unbounded', system-ui;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .brand span:last-child {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      border-color: rgba(111, 163, 255, 0.35);
+      background: rgba(111, 163, 255, 0.08);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: clamp(56px, 8vw, 80px) 28px clamp(88px, 12vw, 120px);
+      display: grid;
+      gap: clamp(36px, 6vw, 48px);
+    }
+
+    .hero {
+      display: grid;
+      gap: clamp(20px, 4vw, 28px);
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: clamp(32px, 6vw, 44px);
+      box-shadow: var(--glow);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(111, 163, 255, 0.12);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -70px;
+      top: -60px;
+      background: radial-gradient(circle, rgba(241, 98, 149, 0.4) 0%, transparent 75%);
+      filter: blur(0.5px);
+    }
+
+    .hero-kicker {
+      font-family: 'Unbounded', system-ui;
+      font-size: 0.85rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: 'Unbounded', system-ui;
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
+      color: var(--muted);
+      line-height: 1.75;
+      letter-spacing: 0.01em;
+    }
+
+    .meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 32px;
+      font-size: clamp(0.9rem, 0.88rem + 0.2vw, 1rem);
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    .meta-grid span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-grid span::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(111, 163, 255, 0.12);
+    }
+
+    article {
+      display: grid;
+      gap: clamp(40px, 8vw, 56px);
+    }
+
+    .chapter-body {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: clamp(28px, 6vw, 40px);
+      border: 1px solid rgba(111, 163, 255, 0.18);
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.32);
+    }
+
+    .chapter-body p {
+      margin: 0 0 clamp(20px, 5vw, 28px);
+      font-size: clamp(1.02rem, 0.98rem + 0.25vw, 1.18rem);
+      color: #e5e9ff;
+      line-height: 1.78;
+      letter-spacing: 0.01em;
+    }
+
+    .chapter-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .image-slot {
+      border-radius: var(--radius-md);
+      border: 1px dashed rgba(111, 163, 255, 0.38);
+      padding: clamp(22px, 5vw, 28px);
+      display: grid;
+      gap: 14px;
+      margin: clamp(26px, 7vw, 40px) 0;
+      text-align: center;
+      background: rgba(9, 13, 22, 0.88);
+    }
+
+    .image-slot button {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: zoom-in;
+      border-radius: 18px;
+      overflow: hidden;
+      display: block;
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .image-slot figcaption {
+      margin: 0;
+      font-size: clamp(0.9rem, 0.88rem + 0.18vw, 1rem);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      padding: clamp(24px, 6vw, 48px);
+      background: rgba(3, 6, 12, 0.74);
+      backdrop-filter: blur(8px);
+      display: grid;
+      place-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      z-index: 50;
+    }
+
+    .lightbox.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox figure {
+      background: rgba(9, 13, 22, 0.92);
+      border-radius: 26px;
+      padding: clamp(18px, 4vw, 28px);
+      max-width: min(960px, 92vw);
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .lightbox img {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    .lightbox figcaption {
+      margin: 0;
+      font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+      color: #e6ebff;
+      line-height: 1.6;
+    }
+
+    .close-lightbox {
+      justify-self: end;
+      border: none;
+      background: rgba(111, 163, 255, 0.24);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .close-lightbox:hover,
+    .close-lightbox:focus {
+      transform: translateY(-1px);
+      background: rgba(111, 163, 255, 0.42);
+    }
+
+    .chapter-nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: clamp(12px, 4vw, 32px);
+    }
+
+    .chapter-nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 12px 24px rgba(111, 163, 255, 0.28);
+      transition: transform 0.2s ease;
+    }
+
+    .chapter-nav a:hover,
+    .chapter-nav a:focus {
+      transform: translateY(-2px);
+      background: var(--accent-strong);
+    }
+
+    footer {
+      padding: 48px 28px 72px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .chapter-body {
+        padding: 24px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .chapter-body p {
+        font-size: 1.02rem;
+      }
+
+      .image-slot img {
+        max-height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="topbar">
+<div class="brand">
+<span>Radiant Archive</span>
+<span>Multiverse heroines &amp; chronicles</span>
+</div>
+<nav aria-label="Primary navigation">
+<a href="../index.html">Home Base</a>
+<a href="../tsunade/index.html">Tsunade Profile</a>
+<a href="chapter-1.html">Chapter 1</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero">
+<span class="hero-kicker">Nezuko Nightfall Chronicle</span>
+<h1>Chapter 2 · Mirror Street Manifestation</h1>
+<p>Zenitsu chases the missing bell into the kaleidoscopic Mirror Street, where reflections of Nezuko bend space, desire, and dread.</p>
+<div class="meta-grid">
+<span>Focus: Nezuko</span>
+<span>Secondary: Zenitsu</span>
+<span>Arc: Mirror Street Mirage</span>
+<span>Reading Time: ~4 minutes</span>
+</div>
+</section>
+<article>
+<section aria-label="Chapter narrative" class="chapter-body">
+
+<p>The Mirror Street was like countless shards of shattered glass layered upon one another, with streets, walls, and lanterns reflecting off each other at bizarre angles. The deeper Zenitsu ventured into it, the more frenzied the folding of the mirrors became, even his own breathing echoing back as a chorus of icy reverberations.</p>
+<p>Ding-ling, ding-ling—</p>
+<p>"It's here, it's here."</p>
+<p>Zenitsu whipped his head around, and in the mirror's refraction, dozens of Nezuko r34's figures appeared simultaneously. They were clad in pink kimonos, their faces bearing gentle yet eerily distorted smiles as they all extended their hands toward Zenitsu, calling his name.</p>
+<p>"Zenitsu brother, come here quick..."</p><figure class="image-slot"><button class="image-trigger" data-alt="Mirrored Nezuko illusions reaching toward Zenitsu" data-caption="Countless mirrored Nezuko illusions beckon Zenitsu deeper into the glasswork." data-image="../tsunade/image/nezuko/nezuko-mirror-illusions-close.png" type="button"><img alt="Mirrored Nezuko illusions reaching toward Zenitsu" src="../tsunade/image/nezuko/nezuko-mirror-illusions-close.png"/></button><figcaption>Countless mirrored Nezuko illusions beckon Zenitsu deeper into the glasswork.</figcaption></figure>
+<p>"Play with me, okay?"</p>
+<p>Zenitsu's pupils contracted sharply, a chill rising along his spine.</p>
+<p>『Fakes! They're all fakes! How could there be so many Nezuko r34s?!』</p>
+<p>He gritted his teeth, reminding himself while trying to steady his trembling legs. Yet, in that instant, the illusion seemed to sniff out the longing and vulnerability in his heart, the mirrored Nezuko r34s suddenly shifting their postures in unison, their kimono fabrics sliding down slowly to reveal pinkish shoulders and curvaceous bosoms. Their gazes turned from gentle to raw seduction, their pink lips parting with low, ambiguous gasps that coiled around Zenitsu's nerves like silken threads.</p>
+<p>One illusory Nezuko r34 pressed close first, her slender arms encircling his waist, her fingertips tracing lightly over his lapel with a touch as slick and warm as heated silk, yet laced with a damp coolness, as if rain had seeped into his skin. Zenitsu's body stiffened involuntarily, his breathing quickening; he felt her full breasts pressing firmly against his chest, that soft elasticity and warmth transmitting through the thin fabric, each rise and fall rubbing against his senses and stirring a scorching throb in his lower abdomen. Her breath fanned across his neck, carrying a sweet, cloying cherry blossom scent mixed with a faint musk of her body, making his throat work and his mind flood with the impulse to strip away her remaining clothes—imagining that smooth skin quivering under his fingers, the pink buds blooming in the air.</p><figure class="image-slot"><button class="image-trigger" data-alt="Zenitsu surrounded by mirrored echoes of Nezuko" data-caption="Zenitsu is swallowed by mirrored echoes of Nezuko, each voice coaxing him to surrender." data-image="../tsunade/image/nezuko/nezuko-zenitsu-mirror-echo.png" type="button"><img alt="Zenitsu surrounded by mirrored echoes of Nezuko" src="../tsunade/image/nezuko/nezuko-zenitsu-mirror-echo.png"/></button><figcaption>Zenitsu is swallowed by mirrored echoes of Nezuko, each voice coaxing him to surrender.</figcaption></figure>
+<p>『This... this isn't real... But why is my body so hot?』 Zenitsu's psyche tore between fear and desire; he knew it was a trap, yet he couldn't tear his eyes away. Another phantom approached from behind, her hands boldly slipping inside his clothes, her nails grazing his back with a subtle sting that instantly morphed into electric pleasure, shooting straight to his groin and making him swell uncontrollably against the confines of his pants. Her lips pressed to his earlobe, her tongue tip licking wetly as she let out a low moan: "Zenitsu brother... Do you want me? Come on, take me..." His senses magnified endlessly—the mirrors' echoes becoming a symphony of their pants, the rain a distant murmur, urging him toward deeper surrender. Zenitsu's hands instinctively gripped her waist, his fingers digging into that yielding flesh, feeling her body's heatwave and slick response, nearly drowning him in this taboo intimacy—mentally, he dreaded betraying the real Nezuko r34, yet craved this illusion's fulfillment, as if only this could prove his guardianship of her was total, fervent.</p>
+<p>More phantoms swarmed, writhing their bodies as their kimonos fell away completely, baring naked forms that reflected in countless overlapping seductive tableaux across the mirrors. Zenitsu's vision blurred, sweat mingling with rain as it trailed down; he felt the rigid strain in his pants chafing with every heartbeat, each pulse driving him toward utter depravity. His inner turmoil crashed like waves: 『Stop... I can't... But if it's for her... No, no!』 Just as he hovered on the brink of collapse, his hands nearly ripping away the last veil from one phantom, the mirrored Nezuko r34s halted in unison, their eyes turning sinister and terrifying:</p>
+<p>"What are you hesitating for? Don't you want to protect me anymore?"</p>
+<p>"No, that's not it! I..."</p>
+<p>Before Zenitsu could finish, the faces of all the mirrored Nezuko r34s twisted into demonic snarls, their razor-sharp nails lunging toward him!</p><figure class="image-slot"><button class="image-trigger" data-alt="Zenitsu recoils inside a hall of warped mirrors" data-caption="Mirage twists the reflections into monsters, leaving Zenitsu reeling inside the hall of mirrors." data-image="../tsunade/image/nezuko/zenitsu-mirror-hall-shock.png" type="button"><img alt="Zenitsu recoils inside a hall of warped mirrors" src="../tsunade/image/nezuko/zenitsu-mirror-hall-shock.png"/></button><figcaption>Mirage twists the reflections into monsters, leaving Zenitsu reeling inside the hall of mirrors.</figcaption></figure>
+<p>"Liar! Coward! You can't save me at all!"</p>
+<p>As dozens of phantoms bore down like a tidal wave, Zenitsu instinctively drew his blade, his voice trembling as he cried out:</p>
+<p>"Thunder Breathing, First Form—Thunderclap and Flash!"</p>
+<p>Blade light erupted, arcs of electricity rending the air; the phantoms were sliced apart by the ferocious thunderblade, dissolving into countless fragments that scattered into the void.</p>
+<p>Yet before Zenitsu could catch his breath, the shattered mirrors reformed with eerie speed, and a new, unfamiliar, chilling face emerged within.</p><figure class="image-slot"><button class="image-trigger" data-alt="Lantern-lit stretch of Mirror Street with prisms of light" data-caption="Lantern glow fractures across Mirror Street as Mirage materializes from the prismatic haze." data-image="../tsunade/image/nezuko/mirror-street-lantern-glow.png" type="button"><img alt="Lantern-lit stretch of Mirror Street with prisms of light" src="../tsunade/image/nezuko/mirror-street-lantern-glow.png"/></button><figcaption>Lantern glow fractures across Mirror Street as Mirage materializes from the prismatic haze.</figcaption></figure>
+<p>It was a demon clad in a black kimono, its form flickering ethereally, a crystalline mirror embedded in its forehead, its gaze laced with mocking amusement.</p>
+<p>"Hello there, cowardly swordsman. I am 'Mirage'—I quite like your fear."</p>
+<p>Zenitsu's sword-gripping hand trembled anew; he clenched his jaw, barely suppressing the terror within, his voice carrying a faint quiver:</p>
+<p>"W-Who said I'm scared of you? D-Don't flatter yourself! Where the hell did you hide the bell?!"</p>
+<p>Mirage tilted its head, its mirror-like pupils reflecting Zenitsu's terrified face:</p><figure class="image-slot"><button class="image-trigger" data-alt="Nezuko striding through prismatic fragments" data-caption="Prismatic fragments track Nezuko’s silhouette, hinting at the true bell hidden among Mirage’s tricks." data-image="../tsunade/image/nezuko/nezuko-comic-prismatic-stride.png" type="button"><img alt="Nezuko striding through prismatic fragments" src="../tsunade/image/nezuko/nezuko-comic-prismatic-stride.png"/></button><figcaption>Prismatic fragments track Nezuko’s silhouette, hinting at the true bell hidden among Mirage’s tricks.</figcaption></figure>
+<p>"Looking for the bell? Hahahaha—Take a good look."</p>
+<p>As the words fell, Mirage snapped its fingers lightly, and countless bells materialized around the mirrors, each identical to Nezuko r34's, dangling from every corner of the Mirror Street, swaying ceaselessly and emitting shrill, piercing chimes.</p>
+<p>"Finding the real one won't be that easy, you know."</p>
+<p>Zenitsu stared at the dense array of bells, his mind descending into chaos.</p>
+<p>『It's over, over, over... Which one is the real one?!』</p><figure class="image-slot"><button class="image-trigger" data-alt="Mirage extending a crystalline hand toward Zenitsu" data-caption="Mirage extends a crystalline hand, daring Zenitsu to choose between countless false bells." data-image="../tsunade/image/nezuko/nezuko-mirage-handreach.png" type="button"><img alt="Mirage extending a crystalline hand toward Zenitsu" src="../tsunade/image/nezuko/nezuko-mirage-handreach.png"/></button><figcaption>Mirage extends a crystalline hand, daring Zenitsu to choose between countless false bells.</figcaption></figure>
+<p>In the midst of his frantic turmoil, the wooden box on his back shifted gently once more, Nezuko r34's fingers slipping quietly from a crack, her fingertip igniting a tiny yet warm flame.</p>
+<p>The flame trailed slowly down Zenitsu's shoulder, etching a faint fiery path on the ground. Mirage's brow furrowed slightly at the sight, clearly displeased:</p>
+<p>"A mere feeble little sister dares to ruin my fun?"</p>
+<p>Yet Nezuko r34's fingertip persisted in kindling the fiery pattern, burning tenderly and steadfastly behind Zenitsu, as if silently conveying:</p>
+<p>『Don't be afraid—I'm right here.』</p><figure class="image-slot"><button class="image-trigger" data-alt="Panoramic view of Mirror Street with fiery guidance" data-caption="Nezuko’s ember trail threads through Mirror Street, giving Zenitsu a path amid the confusion." data-image="../tsunade/image/nezuko/nezuko-mirror-street-panorama.png" type="button"><img alt="Panoramic view of Mirror Street with fiery guidance" src="../tsunade/image/nezuko/nezuko-mirror-street-panorama.png"/></button><figcaption>Nezuko’s ember trail threads through Mirror Street, giving Zenitsu a path amid the confusion.</figcaption></figure>
+<p>Zenitsu lowered his gaze to the fiery path at his feet, and in that instant, all his chaotic emotions miraculously settled.</p>
+<p>『Yeah, I'm not alone at all.』</p>
+<p>He straightened his posture anew, lifting his head to meet Mirage's gaze head-on. His sword hand no longer shook, and a fierce determination ignited in his eyes:</p>
+<p>"Think you can scare me? You picked the wrong guy. The one I have to protect is right here on my back!"</p>
+<p>With that, he erupted once more in thunderous speed, charging headlong into the depths of the Mirror Street along the path indicated by the flames.</p><figure class="image-slot"><button class="image-trigger" data-alt="Zenitsu charging forward with arcane sigils flaring" data-caption="Thunder sigils ignite around Zenitsu as he charges forward, fear burned away by resolve." data-image="../tsunade/image/nezuko/nezuko-arcane-sigil.png" type="button"><img alt="Zenitsu charging forward with arcane sigils flaring" src="../tsunade/image/nezuko/nezuko-arcane-sigil.png"/></button><figcaption>Thunder sigils ignite around Zenitsu as he charges forward, fear burned away by resolve.</figcaption></figure>
+<p>Mirage watched Zenitsu's receding figure in the mirror, its lips curling into a sinister smile as it murmured:</p>
+<p>"How intriguing... The more you struggle, the sweeter the fear becomes."</p>
+<p>With that, Mirage's form faded slowly into the Mirror Street, biding its time for the next hunt.</p>
+
+<p>Record the rest of the mirage confrontation here once the manuscript is finalized. Leave space for the culmination moment where Nezuko cuts through the illusion.</p>
+</section>
+</article>
+<section aria-label="Chapter navigation" class="chapter-nav">
+<a href="chapter-1.html">Return to Chapter 1</a>
+</section>
+</main>
+<div class="lightbox" data-lightbox aria-hidden="true">
+  <figure>
+    <button type="button" class="close-lightbox" data-close>Close</button>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+</div>
+<footer>
+    © 2024 Radiant Archive · Part of the multiverse heroines collection. For collaboration or licensing, connect via the main hub contact page.
+  </footer>
+<script>
+  (() => {
+    const lightbox = document.querySelector('[data-lightbox]');
+    if (!lightbox) return;
+    const lightboxImage = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('figcaption');
+    const closeButton = lightbox.querySelector('.close-lightbox');
+    const triggers = document.querySelectorAll('.image-trigger');
+    let lastTrigger = null;
+
+    const openLightbox = (src, alt, caption, trigger) => {
+      lightboxImage.src = src;
+      lightboxImage.alt = alt;
+      lightboxCaption.textContent = caption;
+      lightbox.classList.add('is-visible');
+      lightbox.removeAttribute('aria-hidden');
+      lastTrigger = trigger;
+      closeButton.focus({ preventScroll: true });
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('is-visible');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImage.src = '';
+      lightboxImage.alt = '';
+      lightboxCaption.textContent = '';
+      if (lastTrigger) {
+        lastTrigger.focus();
+      }
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        openLightbox(
+          trigger.dataset.image,
+          trigger.dataset.alt || '',
+          trigger.dataset.caption || '',
+          trigger
+        );
+      });
+    });
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox || ('close' in event.target.dataset)) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('is-visible')) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Nezuko Nightfall Chronicle – Chapter 2: Mirror Street Manifestation",
+    "description": "Chapter 2 guides Nezuko and Zenitsu into the Mirror Street Mirage where reflections blur the line between longing and danger.",
+    "author": {
+      "@type": "Person",
+      "name": "Radiant Archive Editorial"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Radiant Archive",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.com/assets/logo.png"
+      }
+    },
+    "datePublished": "2024-05-01",
+    "dateModified": "2024-05-01",
+    "wordCount": "420",
+    "inLanguage": "en",
+    "keywords": [
+      "nezuko",
+      "nezuko comic",
+      "nezuko & zenitsu",
+      "zenitsu",
+      "mirror street mirage"
+    ],
+    "articleSection": "Chapter 2",
+    "mainEntityOfPage": "https://example.com/nezuko/chapter-2/"
+  }
+  </script>
+<script defer="" src="https://vercel.com/analytics/script.js"></script>
+<script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Radiant Archive",
+        "item": "https://example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nezuko Nightfall Chronicle",
+        "item": "https://example.com/nezuko/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Chapter 2",
+        "item": "https://example.com/nezuko/chapter-2/"
+      }
+    ]
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radiant Archive Home Base – Anime Heroines Hub</title>
+  <meta name="description" content="Enter the Radiant Archive Home Base to explore curated portals for anime heroines including Nezuko and Tsunade, with room for expanding multiverse chronicles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #05060a;
+      --gradient: radial-gradient(circle at 20% 20%, rgba(241, 98, 149, 0.18), transparent 60%),
+        radial-gradient(circle at 80% 0%, rgba(111, 163, 255, 0.2), transparent 60%),
+        linear-gradient(155deg, #05060a 0%, #0d111e 45%, #06070b 100%);
+      --surface: rgba(18, 22, 34, 0.88);
+      --surface-strong: rgba(24, 29, 43, 0.94);
+      --accent: #f16295;
+      --accent-soft: rgba(241, 98, 149, 0.18);
+      --accent-blue: #6fa3ff;
+      --text: #f6f7fa;
+      --muted: #99a3bc;
+      --divider: rgba(112, 128, 170, 0.28);
+      --glow: 0 24px 48px rgba(111, 163, 255, 0.22);
+      --radius-lg: 30px;
+      --radius-md: 22px;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background: var(--gradient), var(--bg);
+      color: var(--text);
+      letter-spacing: 0.01em;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(20px);
+      background: rgba(8, 10, 16, 0.7);
+      border-bottom: 1px solid rgba(111, 163, 255, 0.18);
+    }
+
+    .topbar {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .brand span:first-child {
+      font-family: 'Unbounded', system-ui;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .brand span:last-child {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .actions a {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(111, 163, 255, 0.2);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .actions a.primary {
+      background: linear-gradient(135deg, rgba(241, 98, 149, 0.24), rgba(111, 163, 255, 0.28));
+      border-color: rgba(241, 98, 149, 0.45);
+      box-shadow: 0 16px 32px rgba(241, 98, 149, 0.22);
+    }
+
+    .actions a:hover,
+    .actions a:focus {
+      transform: translateY(-2px);
+      border-color: rgba(241, 98, 149, 0.5);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+      display: grid;
+      gap: 64px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 26px;
+      background: var(--surface);
+      padding: 48px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--glow);
+      border: 1px solid rgba(111, 163, 255, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      top: -120px;
+      right: -80px;
+      background: radial-gradient(circle, rgba(241, 98, 149, 0.35) 0%, transparent 75%);
+    }
+
+    .hero-kicker {
+      font-family: 'Unbounded', system-ui;
+      font-size: 0.9rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .hero h1 {
+      font-family: 'Unbounded', system-ui;
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: #dbe0f5;
+      max-width: 640px;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-cta a {
+      padding: 14px 26px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--text);
+      border: 1px solid rgba(241, 98, 149, 0.4);
+      background: linear-gradient(135deg, rgba(241, 98, 149, 0.3), rgba(111, 163, 255, 0.24));
+      transition: transform 0.25s ease;
+    }
+
+    .hero-cta a.secondary {
+      background: rgba(8, 11, 18, 0.7);
+      border-color: rgba(111, 163, 255, 0.32);
+    }
+
+    .hero-cta a:hover,
+    .hero-cta a:focus {
+      transform: translateY(-2px);
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .section-heading h2 {
+      font-family: 'Unbounded', system-ui;
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      margin: 0;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 480px;
+    }
+
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .character-card {
+      position: relative;
+      background: var(--surface-strong);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      display: grid;
+      gap: 18px;
+      border: 1px solid rgba(111, 163, 255, 0.2);
+      overflow: hidden;
+      min-height: 260px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .character-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 30%, rgba(241, 98, 149, 0.18), transparent 65%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .character-card:hover,
+    .character-card:focus-within {
+      transform: translateY(-4px);
+      border-color: rgba(241, 98, 149, 0.55);
+    }
+
+    .character-card:hover::after,
+    .character-card:focus-within::after {
+      opacity: 1;
+    }
+
+    .character-card h3 {
+      font-family: 'Unbounded', system-ui;
+      font-size: 1.35rem;
+      margin: 0;
+    }
+
+    .character-card p {
+      margin: 0;
+      color: #d6dcf3;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .character-card .cta {
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(241, 98, 149, 0.24);
+      border: 1px solid rgba(241, 98, 149, 0.45);
+      transition: transform 0.25s ease;
+    }
+
+    .character-card .cta:hover,
+    .character-card .cta:focus {
+      transform: translateY(-2px);
+    }
+
+    .updates {
+      display: grid;
+      gap: 24px;
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      border: 1px solid rgba(111, 163, 255, 0.22);
+    }
+
+    .updates h3 {
+      margin: 0;
+      font-family: 'Unbounded', system-ui;
+      font-size: 1.4rem;
+    }
+
+    .update-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .update-item {
+      display: grid;
+      gap: 6px;
+    }
+
+    .update-item span {
+      color: var(--muted);
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .update-item p {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.6;
+      color: #e6ebff;
+    }
+
+    footer {
+      padding: 48px 24px 72px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .actions {
+        width: 100%;
+      }
+
+      .hero {
+        padding: 36px;
+      }
+
+      .hero-cta a {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+
+      .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .updates {
+        padding: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <span>Radiant Archive</span>
+        <span>Multiverse heroines & chronicles</span>
+      </div>
+      <div class="actions">
+        <a class="primary" href="#featured">Featured Arcs</a>
+        <a href="#updates">Release Notes</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <span class="hero-kicker">Home Base</span>
+      <h1>Choose Your Gateway Into The Radiant Archive</h1>
+      <p>Every heroine portal unlocks a different storytelling format—from deep-dive dossiers to serialized nightfall chronicles. Pick a starting arc and dive into curated lore, visuals, and evolving updates.</p>
+      <div class="hero-cta">
+        <a href="#featured">Browse Featured Characters</a>
+        <a class="secondary" href="#updates">See What's New</a>
+      </div>
+    </section>
+
+    <section id="featured" aria-labelledby="featured-heading">
+      <div class="section-heading">
+        <h2 id="featured-heading">Featured Heroine Portals</h2>
+        <p>Curated arcs with full experiences ready to explore. Each card opens to a dedicated subpage within the archive.</p>
+      </div>
+      <div class="character-grid">
+        <article class="character-card">
+          <h3>Nezuko Nightfall Chronicle</h3>
+          <p>Serialized fiction following Nezuko and Zenitsu across rain-swept relay stations and mirror-streaked illusions, complete with art slots for immersive scenes.</p>
+          <a class="cta" href="nezuko/chapter-1.html">Enter Nezuko's Arc →</a>
+        </article>
+        <article class="character-card">
+          <h3>Tsunade Signature Dossier</h3>
+          <p>A polished biography archive cataloging Tsunade's timeline, Senju legacy, signature abilities, FAQs, and artifact gallery references.</p>
+          <a class="cta" href="tsunade/index.html">Visit Tsunade Profile →</a>
+        </article>
+        <article class="character-card">
+          <h3>Future Heroine Slot</h3>
+          <p>Reserve this space for the next multiverse entrant—ideal for character spotlights, illustrated timelines, or interview-style presentations.</p>
+          <a class="cta" href="#" aria-disabled="true">Coming Soon</a>
+        </article>
+        <article class="character-card">
+          <h3>Community Curation</h3>
+          <p>Showcase fan-voted heroines with rotating features, short-form lore bites, and collaborative art boards sourced from the archive community.</p>
+          <a class="cta" href="#" aria-disabled="true">Opens Q3 2024</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="updates" id="updates" aria-labelledby="updates-heading">
+      <h3 id="updates-heading">Station Log</h3>
+      <div class="update-list">
+        <div class="update-item">
+          <span>May 2024</span>
+          <p>Nezuko Nightfall Chronicle launched with immersive chapter layouts and structured metadata for SEO visibility.</p>
+        </div>
+        <div class="update-item">
+          <span>April 2024</span>
+          <p>Tsunade dossier refreshed with cinematic theming, expandable data tables, and FAQ schema.</p>
+        </div>
+        <div class="update-item">
+          <span>Coming Soon</span>
+          <p>Concept art carousel integration across all heroine portals plus community submission pipeline.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2024 Radiant Archive · Crafted for explorers of multiverse heroines. Reach out via the contact form to request new portal coverage.
+  </footer>
+</body>
+</html>
